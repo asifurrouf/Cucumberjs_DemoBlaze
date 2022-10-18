@@ -6,9 +6,6 @@ const locator= new locatorsPage();
 const data= new Data(); 
 
 
-// <------------------------------------------------------------------->
-// <----------------------- Login Steps ------------------------------->
-// <------------------------------------------------------------------->
 Given('open demoblaze website',function(){ 
     cy.visit(data.URL);
     cy.wait(3000)
