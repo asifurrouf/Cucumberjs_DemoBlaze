@@ -4,7 +4,7 @@ Feature: Demo Blaze Website
         Given open demoblaze website
         
 
-    Scenario: Buy a Phone
+    Scenario: Buy Mobile
         When click on Home Button
         And click on Phone Button
         And click on first mobile from list

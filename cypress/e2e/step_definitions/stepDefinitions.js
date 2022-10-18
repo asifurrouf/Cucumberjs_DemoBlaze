@@ -60,6 +60,72 @@ And('click on purchase button',()=>{
     cy.xpath(locator.purchaseButton).click({force: true});
 })
 
+// Message
+And('click on contacts',()=>{ 
+    cy.xpath(locator.contact).click({force: true});
+    cy.wait(2000)
+})
+And('type email address',()=>{ 
+    cy.xpath(locator.contactEmailTextBox).type(data.USERNAME);
+})
+And('type contact name',()=>{ 
+    cy.xpath(locator.contactNameTextBox).type(data.USERNAME);
+})
+And('type message',()=>{ 
+    cy.xpath(locator.messageTextBox).type(data.MESSAGE);
+})
+And('click on send message',()=>{ 
+    cy.xpath(locator.sendMessage).click({force: true});
+})
+And('click on close message',()=>{ 
+    cy.xpath(locator.closeMessage).click({force: true});
+})
+
+// About us
+And('click on about us',()=>{ 
+    cy.xpath(locator.aboutUs).click({force: true});
+    cy.wait(2000)
+})
+And('click on play',()=>{ 
+    cy.xpath(locator.play).click({force: true});
+    cy.wait(3000)
+})
+And('click on pause',()=>{ 
+    cy.xpath(locator.pause).click({force: true});
+})
+And('click on close about us',()=>{ 
+    cy.xpath(locator.aboutUsClose).click({force: true});
+})
+
+// Log in
+And('click on log in',()=>{ 
+    cy.xpath(locator.login).click({force: true});
+    cy.wait(2000)
+})
+And('type login user name',()=>{ 
+    cy.xpath(locator.userName).type(data.USERNAME);
+})
+And('type login password',()=>{ 
+    cy.xpath(locator.password).type(data.PASSWORD);
+})
+And('click on log close',()=>{ 
+    cy.xpath(locator.loginClose).click({force: true});
+})
+
+// Sign up
+And('click on sign up',()=>{ 
+    cy.xpath(locator.signup).click({force: true});
+    cy.wait(2000)
+})
+And('type sign up user name',()=>{ 
+    cy.xpath(locator.signupUsername).type(data.USERNAME);
+})
+And('type sign up password',()=>{ 
+    cy.xpath(locator.signupPassword).type(data.PASSWORD);
+})
+And('click on sign up close',()=>{ 
+    cy.xpath(locator.signupClose).click({force: true});
+})
 
 
 
